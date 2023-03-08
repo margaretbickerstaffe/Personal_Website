@@ -1,0 +1,275 @@
+body{
+  margin: 0px;
+  min-height: 100%;
+  background-color: #EFEFE9;
+}
+/* HOME PAGE/ABOUT ME*/
+.homePage {
+  display: grid;
+  grid-template-areas: "header"
+                       "introduction"
+                      "moreAboutMargaret";
+}
+.header {
+  font-family: 'Montserrat', sans-serif;
+  color: #959D90;
+  font-weight: bold;
+  background-color: #EFEFE9;
+  grid-area: header;
+  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-areas: "home aboutMe resume pastProjects experience";
+  margin-top: 50px;
+}
+.home{
+  grid-area: home;
+}
+.home:hover {
+  text-decoration: underline;
+}
+.aboutMe{
+  grid-area: aboutMe;
+}
+.aboutMe:hover {
+  text-decoration: underline;
+}
+.resume{
+  grid-area: resume;
+}
+.resume:hover {
+  text-decoration: underline;
+}
+.pastProjects {
+  grid-area: pastProjects;
+}
+.pastProjects:hover {
+  text-decoration: underline;
+}
+.experience{
+  grid-area: experience;
+}
+.experience:hover {
+  text-decoration: underline;
+}
+.learnMore:hover {
+  color: #959D90;
+}
+.introduction {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 20px;
+  grid-area: introduction;
+/*border: 0.5px solid #523D35; */
+  margin: 70px auto auto auto;
+  width: 87%;
+  padding: 15px 15px 3px 15px;
+
+  display: grid;
+  grid-template-areas: "intro imgOutdoors";
+
+  grid-gap: 10px;
+  color: #523D35;
+}
+.introToMargaret{
+  grid-area: intro;
+  text-align: left;
+  margin: auto; 0px 0px auto;
+  line-height: 20px;
+}
+.introToMargaret p:first-of-type{
+  font-size: 60px;
+  margin: 0px;
+}
+.imageOutdoors{
+  grid-area: imgOutdoors;
+  margin: auto 0px auto 0px;
+  margin: 0px;
+}
+
+/* ABOUT ME PAGE */
+.aboutMeCtd{
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 20px;
+  grid-area: moreAboutMargaret;
+  text-align: center;
+  /*border: 0.5px solid #523D35;*/
+  margin: 20px 65px 30px 65px;
+  padding: 15px 15px 12px 15px;
+  display: grid;
+  grid-template-areas: "imgTraveling aboutMe";
+
+  grid-gap: 20px;
+  color: #523D35;
+}
+.aboutMeText{
+  grid-area: aboutMe;
+  text-align: left;
+  margin: auto; 0px 0px auto;
+  line-height: 20px;
+}
+.aboutMeText p:first-of-type{
+  font-size: 60px;
+  margin: 0px;
+}
+.imageTraveling{
+  grid-area: imgTraveling;
+  margin: auto 0px auto 0px;
+  margin: 0px;
+}
+
+/*RESUME PAGE*/
+.resumeSection{
+  background-color: #959D90;
+}
+.downloadSection{
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 18px;
+  margin-left: 20%;
+}
+a{
+  color: #F2F2EB;
+}
+.resumeImage{
+  grid-area: resumePic;
+  display: block;
+  margin: 0px auto 25px auto;
+  width: 60%;
+}
+
+/* PORTFOLIO */
+.coding{
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 0px 65px 0px 65px;
+  color: #523D35;
+}
+.codingPageTitle{
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.projects{
+  text-align: left;
+  font-size: 15px;
+  line-height: 18px;
+}
+.title{
+  font-size: 30px;
+  margin: 10px;
+  margin-left: 0px;
+  padding-top: 10px;
+}
+.githubLinks{
+  color: #523D35;
+}
+/* EXPERIENCE */
+.experienceSection{
+  background-color: #959D90;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #223030;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+.experienceSection h1{
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.internshipDetails{
+  line-height: 10px;
+}
+.internshipSummary{
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.research{
+  display: grid;
+  grid-template-columns: auto 50%;
+  grid-template-areas:"details img"
+                      "summary img"
+                      "abstract abstract";
+}
+.researchDetails{
+  line-height: 15px;
+  grid-area: details;
+}
+.researchSummary{
+  line-height: 20px;
+  font-size: 18px;
+  grid-area: summary;
+}
+.researchPic{
+  grid-area: img;
+  padding: 40px 15px 15px 15px;
+}
+.abstract{
+  grid-area: abstract;
+  padding: 10px;
+}
+
+@media (max-width: 1250px) {
+  .introToMargaret p:first-of-type{
+    font-size: 60px;
+    margin: auto;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  .introduction {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    grid-area: introduction;
+    margin: 70px 65px auto 65px;
+    padding: auto;
+
+    display: grid;
+    grid-template-areas: "imgOutdoors"
+                         "intro";
+
+    grid-gap: 10px;
+    color: #523D35;
+  }
+  .introToMargaret{
+    grid-area: intro;
+    text-align: left;
+    margin: auto;
+    line-height: auto;
+  }
+  .introToMargaret p:first-of-type{
+    font-size: 60px;
+    margin: auto;
+    line-height: 45px;
+  }
+  .imageOutdoors{
+    grid-area: imgOutdoors;
+    margin: auto 0px auto 0px;
+    margin: 0px;
+    width: 50%;
+  }
+  .aboutMeText p:first-of-type{
+    font-size: 60px;
+    margin: 0px;
+    line-height: 45px;
+  }
+  .aboutMeCtd{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    grid-area: moreAboutMargaret;
+    text-align: center;
+    /*border: 0.5px solid #523D35;*/
+    margin: 20px 65px 30px 65px;
+    padding: 15px 15px 12px 15px;
+    display: grid;
+    grid-template-areas: "imgTraveling"
+                          "aboutMe";
+
+    grid-gap: 20px;
+    color: #523D35;
+  }
+  .imageTraveling{
+    grid-area: imgTraveling;
+    margin: auto 0px auto 0px;
+    margin: 0px;
+    width: 50%;
+  }
+}
